@@ -7,7 +7,7 @@ const router: Router = express.Router()
 // Get all users
 router.get('/', authMiddleware.verifyToken, UserController.getUsers)
 
-// Get a single user by ID
+// Get a single user by ID with authentication
 router.get('/:id', authMiddleware.verifyToken, UserController.getUserById)
 
 // Update a user
