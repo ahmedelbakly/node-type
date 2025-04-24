@@ -15,6 +15,11 @@ app.get('/', (req, res) => {
     'Hello World from the backend with typescript and express and mongodb and docker'
   )
 })
+app.get('/api/test', (req, res) => {
+  res.send(
+    'Hello World from the backend with typescript and express and mongodb and docker and test'
+  )
+})
 app.use('/api/users', userRoutes)
 app.use('/api/auth', authRoutes)
 
