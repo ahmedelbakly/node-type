@@ -27,4 +27,4 @@ jobs:
         context: .
         file: Dockerfile
         push: true
-        tags: ahmedelbakly258/my-image-name:latest
+        tags: ahmedelbakly258/elbakly-node-app-typescript:latest
